@@ -8,6 +8,13 @@
  * Do basic math.
  */
 function doMathClicked() {
-  // this function does basic math
-document.getElementById('perimeter-math').innerHTML = '<p>The perimeter is= ' + (5 + 5 + 5 + 5) + '</p>'
+  // input
+const length = parseInt(document.getElementById('length-of-rectangle').value)
+
+
+  // process
+ const perimeter = 
+
+  // output
+    document.getElementById('perimeter').innerHTML = 'Perimeter is: ' + perimeter + ' cm'
 }

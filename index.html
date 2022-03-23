@@ -28,13 +28,30 @@
       <main class = "mdl-layout__content">
         <!-- basic text -->
         <h3>The dimensions of a rectangle are: 5cm and 5cm</h3>
-        <div id="perimeter-math">
-          <p>The perimeter is: ?</p>
-        </div>
+        <!-- Simple Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="length-of-rectangle"
+            />
+            <label class="mdl-textfield__label" for="length-of-rectangle">Length ...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
         <!-- Raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="doMathClicked()">
           Calculate
         </button>
+        <br />
+        <p>
+          <div id="answers">
+            <div id="area"></div>
+            <div id="perimeter"></div>
+          </div>
+        </p>
       </main>
     </div>
   </body>
