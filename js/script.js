@@ -7,13 +7,13 @@
 /**
  * Do basic math.
  */
-function doMathClicked() {
+function calculate() {
   // input
-const length = parseInt(document.getElementById('length-of-rectangle').value)
+ const length = parseFloat(document.getElementById('length-of-square').value)
 
 
   // process
- const perimeter = 
+ const perimeter = length * 4
 
   // output
     document.getElementById('perimeter').innerHTML = 'Perimeter is: ' + perimeter + ' cm'
